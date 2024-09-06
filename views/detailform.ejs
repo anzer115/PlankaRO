@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit your Details</title>
+   
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@600&family=Montserrat&family=Pacifico&family=Playfair+Display&family=Poppins&family=Righteous&family=Roboto+Serif:opsz,wght@8..144,600&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #formm {
+            margin-left: 29%;
+            margin-top: 6%;
+        }
+        #formm h1 {
+            margin-left: 24%;
+            line-height: 3rem;
+            font-family: 'Montserrat';
+            color: #0B4251
+        }
+        .line {
+            border-bottom: 1px solid grey;
+            margin-right: 11%;
+            margin-left: -48px;
+            margin-top: -14px;
+        }
+        label {
+            font-family: 'Montserrat';
+            color: #0B4251
+        }
+        #query {
+            font-family: 'Montserrat';
+            color: #0B4251
+        }
+        option {
+            font-family: 'Montserrat';
+            color: #0B4251
+        }
+        .copyright p {
+            color: rgb(7, 0, 0);
+            font-size: 12px;
+            text-align: left;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-style: normal;
+            margin-left: 24px;
+            margin-top: 9%;
+        }
+        .dark-blue {
+            background-color: #0b4251;
+        }
+        .dark-blue:hover {
+            background-color: #8a8a8a86;
+            color: #0B4251;
+        }
+        .fontchange {
+            font-family: 'Montserrat';
+            color: #0B4251;
+            font-weight: 700;
+        }
+        .colorchange {
+            font-family: 'Montserrat';
+            color: #0B4251;
+        }
+        #sub:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="bg-zinc-100">
+    <nav class="flex px-10 justify-between py-5">
+        <h2 class="text-4xl fontchange tracking-tight">PlankaRO</h2>
+        <div class="navlinks colorchange flex gap-5">
+            <a class="tracking-tight" href="/">Home</a>
+        </div>
+    </nav>
+    <div id="formm">
+        <h1>Please Provide Your Details</h1>
+        <div class="line"></div>
+        <br>
+        <form action="/submit" method="post">
+            <label for="n">Name</label>
+            <div>
+                <input class="tracking-tight border-2 bg-zinc-100 px-5 py-1 rounded-md outline-none" type="text" name="name" id="n" required>
+            </div>
+            <br>
+            <label for="e">E-mail</label>
+            <div>
+                <input class="tracking-tight border-2 bg-zinc-100 px-5 py-1 rounded-md outline-none" type="email" id="e" name="email" required>
+            </div>
+            <br>
+            <label for="p">Phone</label>
+            <div>
+                <input class="tracking-tight border-2 bg-zinc-100 px-5 py-1 rounded-md outline-none" type="tel" id="p" name="phone" required>
+            </div>
+            <br>
+            <label for="g">Gender</label>
+            <div id="query">
+                Male <input class="mx-2 bg-zinc-100 outline-none" type="radio" id="male" name="gender" value="Male">
+                Female <input class="mx-2 bg-zinc-100 outline-none" type="radio" id="female" name="gender" value="Female" >
+            </div>
+            <br>
+            <div>
+                <label for="etype">Event Type</label><br>
+                <select class="border-2 bg-zinc-100 rounded-md outline-none" name="eventtype" id="etype">
+                    <option value="Corporate Event">Corporate Event</option>
+                    <option value="College Event">College Event</option>
+                    <option value="Fest">Fest</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Live Show">Live Show</option>
+                    <option value="Festival">Festival</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div id="query">
+                Any Query? <br>
+                <textarea class="border-2 bg-zinc-100 rounded-md resize-none outline-none" name="query" cols="50" rows="4"></textarea>
+            </div>
+            <br>
+            <div>
+                <input class="px-5 py-2 text-sm tracking-tight text-white dark-blue rounded-md" type="submit" value="Submit Now" id="sub">
+            </div>
+        </form>
+    </div>
+    <div class="copyright">
+        <p>ALL RIGHTS RESERVED &nbsp;|&nbsp; LET'S MAKE MAGIC TOGETHER | &nbsp;|&nbsp; © 2023 PlankaRO</p>
+    </div>
+</body>
+
+</html>

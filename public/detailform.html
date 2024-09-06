@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Details</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@600&family=Montserrat&family=Pacifico&family=Playfair+Display&family=Poppins&family=Righteous&family=Roboto+Serif:opsz,wght@8..144,600&family=Ubuntu+Mono&display=swap"
+    rel="stylesheet">
+    <style>
+        body{
+            background: linear-gradient(to right, rgb(201, 214, 255), rgb(226, 226, 226));
+        }
+        input{
+            background: linear-gradient(to right, rgb(202 197 49 / 3%), rgb(243, 249, 167));
+        }
+        select{
+            background: linear-gradient(to right, rgb(202 197 49 / 3%), rgb(243, 249, 167));
+        }
+        textarea{
+            background: linear-gradient(to right, rgb(202 197 49 / 3%), rgb(243, 249, 167));
+        }
+        #formm{
+            margin-left: 29%;
+    margin-top: 6%;
+     }
+     #formm h1{
+        margin-left: 24%;
+        line-height: 3rem;
+        font-family: 'Pacifico';
+        color: brown;
+     }
+     .line{
+        border-bottom: 1px solid grey;
+        margin-right: 11%;
+    margin-left: -48px;
+    margin-top: -14px;
+     }
+     label{
+        font-family: 'Pacifico';
+        color: brown;
+     }
+     #query{
+        font-family: 'Pacifico';
+        color: brown;
+     }
+     option{
+        font-family: 'Pacifico';
+        background: linear-gradient(to right, rgb(202, 197, 49), rgb(243, 249, 167));
+        color: brown;
+     }
+     .copyright p{
+            color: rgb(7, 0, 0);
+    font-size: 12px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 24px;
+    margin-top: 9%;
+        }
+        #sub:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="formm">
+    <h1>Please Provide Your Details</h1>
+    <div class="line">
+
+    </div>
+    <br>
+    <form>
+        <label for="n">Name</label>
+        <div>
+            <input type="text" id="n" name="myName">
+        </div>
+        <br>
+        <label for="e">E-mail</label>
+        <div>
+            <input type="email" id="e" name="myEmail">
+        </div>
+        <br>
+        <label for="p">Phone</label>
+        <div>
+            <input type="text" id="p" name="mynumber">
+        </div>
+        <br>
+        <label for="g">Gender</label>
+        <div id="query">
+            Male<input type="radio" id="g" name="myGender">Female<input type="radio" name="myGender">
+        </div>
+        <br>
+        <div >
+            <label for="etype">Event Type</label><br>
+            <select name="myEvent" id="etype">
+                <option value="Corp">Corporate Event</option>
+                <option value="College">College Event</option>
+                <option value="Fest">Fest</option>
+                <option value="Bdday">Birthday</option>
+                <option value="Live">Live Show</option>
+                <option value="Festival">Festival</option>
+                <option value="othr">Other</option>
+            </select>
+        </div>
+        <br>
+        <div id="query">
+            Any Query? <br>
+            <textarea name="myquery" cols="100" rows="4"></textarea>
+        </div>
+        <br>
+        <div >
+            <input type="submit" value="Submit Now" id="sub">
+        </div>
+    </form>
+</div>
+<div class="copyright">
+    <p>ALL RIGHTS RESERVED &nbsp;|&nbsp; LET'S MAKE MAGIC TOGETHER |  &nbsp;|&nbsp; © 2023 PlankaRO
+    </p>
+</div>
+</body>
+
+</html>

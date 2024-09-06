@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="Futura Std Medium.otf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@600&family=Montserrat&family=Pacifico&family=Playfair+Display&family=Poppins&family=Righteous&family=Roboto+Serif:opsz,wght@8..144,600&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="IvyMode-Bold.ttf">
+
+    <style>
+        body {
+            background: linear-gradient(to left, rgb(239, 239, 187), rgb(212, 211, 221));
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-flow: wrap;
+            padding-bottom: 15px;
+        }
+
+        .card {
+            width: 16%;
+            margin: .2px;
+        }
+
+        .card-body {
+            margin-top: -44px;
+        }
+
+        .card-body a {
+            color: black;
+            background: white;
+            border: none;
+            margin-bottom: -54px;
+            padding: 4px;
+            font-family: 'Righteous';
+}
+        .card-body a:hover{
+            background-color: darkgreen;
+            color: white;
+        }
+        .card-body a:active{
+            background-color: white ;
+            color: darkgreen;
+        }
+
+        .card img {
+            padding: 11px;
+            height: 77%;
+            margin-bottom: 0%;
+        }
+
+        .carousel-item img {
+            height: 364.45px;
+
+        }
+
+        #c2 {
+            width: 70%;
+            font-size: 50px;
+
+            margin-left: 52%;
+            margin-bottom: -4%;
+        }
+
+        #c3 {
+            font-size: 52px;
+            margin-top: -32%;
+        }
+
+        #hed1 {
+            font-family: 'Futura Std Medium';
+            letter-spacing: 25.5px;
+            font-size: 60px;
+            margin-top: 68px;
+            margin-bottom: 33px;
+            text-transform: uppercase;
+            margin-left: 29%;
+            color: darkgoldenrod;
+
+        }
+
+        .cprice {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+
+        /* cards */
+        .mcard {
+            width: 27%;
+            border: 1px solid darkred;
+            margin: 25px;
+            padding: 18px;
+            border-radius: 43px;
+            color: darkred;
+        }
+
+        li {
+            font-size: 15px;
+            line-height: 2em;
+
+        }
+
+        .cp1 h3 {
+            /* margin-left: 34%; */
+            margin-bottom: 38px;
+            font-size: 41px;
+            font-family: 'Righteous';
+            letter-spacing: 0.2em;
+            margin-top: 26px;
+
+        }
+
+        #m1 {
+            height: 320px;
+        }
+
+        #m2 {
+            height: 30%;
+        }
+
+        .mcard h4 {
+            margin-left: 2px;
+            font-family: 'jost';
+            color: #9c9f05;
+        }
+
+        .mcard h5 {
+            margin-top: -24px;
+            font-family: 'jost';
+        }
+
+        #m3 h4 {
+            margin-left: 2px;
+        }
+
+        .b button {
+            margin-left: 73%;
+            margin-top: -66px;
+            border-radius: 16px;
+            font-family: 'Righteous';
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li:before {
+
+            content: '✓  ';
+        }
+
+        .l1 li {
+            font-family: cursive;
+        }
+
+        .l2 li {
+            font-family: cursive;
+
+        }
+
+        .l3 li {
+            font-family: cursive;
+        }
+
+        .sp2 {
+            border-bottom: 1px solid #80808073;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        #n1 {
+            margin-left: 40%;
+            color: darkcyan;
+        }
+
+        #n2 {
+            margin-left: 39%;
+            color: darkcyan;
+        }
+
+        #n3 {
+            margin-left: 40%;
+            color: darkcyan;
+
+        }
+
+        #n4 {
+            margin-left: 46%;
+            color: darkcyan;
+        }
+
+        #n5 {
+            margin-left: 36%;
+            color: darkcyan;
+        }
+
+        #n6 {
+            margin-left: 34%;
+            color: darkcyan;
+        }
+
+        .d-md-flex {
+            padding-right: 8%;
+            margin-left: 4%;
+
+        }
+
+      
+        #btn{
+            background: none ;
+            color: green;
+            border-color: green;
+            padding: 10px 12px;
+            margin-left: 64%;
+            border-radius: 24px;
+            margin-top: 4%;
+        }
+        #btn:hover{
+            background-color: rgb(19, 77, 19);
+            color: white;
+            box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+        }
+        #lt1 ul li{
+            font-family: 'Times New Roman', Times, serif ;
+            font-size: 15px;
+            padding-top: 10px;
+        }
+        #lt2 ul li{
+            font-family: 'Times New Roman', Times, serif ;
+            font-size: 15px;
+            padding-top: 4px;
+        }
+        .spl{
+            border-bottom: 1px solid grey;
+            margin-left: 53px;
+    margin-right: 53px;
+        }
+        .copyright p{
+            color: rgb(7, 0, 0);
+    font-size: 12px;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 52px;
+        }
+     .book{
+             text-decoration: none;
+             color: darkgreen;
+  
+        }
+        .book:hover{
+             text-decoration: none;
+             color: rgb(255, 255, 255);
+           
+  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="f8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+
+                <a href="#section1" class="btn btn-primary">Corporate Events</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="bocr1.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#section2" class="btn btn-primary">College Events</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="bc2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+
+
+                <a href="#section3" class="btn btn-primary">Fests</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="birthday.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+
+
+                <a href="#section4" class="btn btn-primary">Birthdays</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+
+
+                <a href="#section5" class="btn btn-primary">Live Shows</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Large-Firework.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+
+
+                <a href="#section6" class="btn btn-primary">Festivals</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- crousel -->
+
+
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1500">
+                <img src="raksha bandhan.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style=" font-size: 67px;
+            margin: auto;">20% Off the Joy of Raksha Bandhan: Celebrate with PlankaRO at an Exclusive Price!</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="internet-for-hackatons-1024x480.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 id="c2">Crafting Code, Shaping Dreams: Your Next Remarkable Hackathon, Seamlessly Orchestrated
+                        by PlankaRO!</h2>
+
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1500">
+                <img src="conference.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 id="c3">Unveiling Ideas, Uniting Minds: Elevate Your Conference with PlankaRO!</h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- heading -->
+    <div class="sp1">
+        <h3 id="hed1">OUR PRICES</h3>
+    </div>
+    <div class="sp2">
+
+    </div>
+
+    <!-- Corporate -->
+    <div class="cp1">
+        <section id="section1">
+        <h3 id="n6">Corporate Events</h3></section>
+        <div class="cprice">
+
+            <div class="mcard shadow" id="m1">
+                <h4>Basic Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.50000/-</h5>
+
+                <div class="l1">
+                    <ul>
+                        <li>1 onsite property layout/design meeting, and up to 3 additional meetings</li>
+                        <li>Cloud-based Project HQ</li>
+                        <li>Supply any/all vendor recommendations </li>
+                        <li>Master timelines & Production schedules</li>
+                        <li>Complete rental ordering, management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mcard shadow"  id="m2">
+                <h4>InBudget Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.75000/-</h5>
+                <div class="l2">
+                    <ul>
+                        <li>Helping clients find affordable yet suitable venues for their events.</li>
+                        <li>Creating a basic event theme and design to give the event a cohesive look.</li>
+                        <li>Negotiating with and managing vendors (caterers, decorators, etc.) to fit within the budget.
+                        </li>
+                        <li>Providing simple decor elements that align with the event theme.</li>
+                        <li>Handling RSVPs and attendee coordination.</li>
+                        <li>Organizing transportation and setup logistics.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="mcard shadow" id="m3">
+                <h4>Premium Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.100000/-</h5>
+                <div class="l3">
+                    <ul>
+                        <div class="box">
+                        <div class="visible-content">
+                        <li>Creating a unique and elaborate event theme and design tailored to the client's vision.</li>
+                        <li> Scouting and transforming venues to match the event's luxury theme.</li>
+                        <li> Incorporating lavish decor elements, premium floral arrangements, and intricate detailing.
+                        </li>
+
+                        <li> Managing and coordinating all vendors, including top-tier catering,
+                            entertainment, and
+                            more.</li>
+                        </div>
+                            <div class="invisible-content">
+
+                        <li> Offering personalized services to attendees, such as welcome gifts or
+                            concierge services.
+                        </li>
+
+                        <li>State-of-the-art sound, lighting, and multimedia setup for presentations and
+                            entertainment.
+                        </li>
+                        <li>Curating gourmet menus and fine dining experiences.</li>
+                        <li>Offering exclusive access and experiences for VIP guests.</li>
+                    </div>
+                        <button id="btn">Read More</button>
+                    </div>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="sp2">
+
+    </div>
+    <!-- College -->
+
+    <div class="cp1">
+        <section id="section2">
+        <h3 id="n5">College Events</h3></section>
+        <div class="cprice">
+
+            <div class="mcard shadow" id="m1">
+                <h4>Basic Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.5000/-</h5>
+
+                <div class="l1">
+                    <ul>
+                        <li>1 onsite property layout/design meeting, and up to 3 additional meetings</li>
+                        <li>Cloud-based Project HQ</li>
+                        <li>Supply any/all vendor recommendations </li>
+                        <li>Master timelines & Production schedules</li>
+                        <li>Complete rental ordering, management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mcard shadow" id="m2">
+                <h4>InBudget Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.7000/-</h5>
+                <div class="l2">
+                    <ul>
+                        <li>Helping clients find affordable yet suitable venues for their events.</li>
+                        <li>Creating a basic event theme and design to give the event a cohesive look.</li>
+                        <li>Negotiating with and managing vendors (caterers, decorators, etc.) to fit within the budget.
+                        </li>
+                        <li>Providing simple decor elements that align with the event theme.</li>
+                        <li>Handling RSVPs and attendee coordination.</li>
+                        <li>Organizing transportation and setup logistics.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="mcard shadow" id="m3">
+                <h4>Premium Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.10000/-</h5>
+                <div class="l3">
+                    <ul>
+                        <div class="box">
+                        <div class="visible-content">
+                        <li>Creating a unique and elaborate event theme and design tailored to the client's vision.</li>
+                        <li> Scouting and transforming venues to match the event's luxury theme.</li>
+                        <li> Incorporating lavish decor elements, premium floral arrangements, and intricate detailing.
+                        </li>
+                        <li> Managing and coordinating all vendors, including top-tier catering, entertainment, and
+                            more.
+                        </li>
+                    </div>
+                    <div class="invisible-content">
+                        <li> Offering personalized services to attendees, such as welcome gifts or concierge services.
+                        </li>
+                        <li>State-of-the-art sound, lighting, and multimedia setup for presentations and entertainment.
+                        </li>
+                        <li>Curating gourmet menus and fine dining experiences.</li>
+                        <li>Offering exclusive access and experiences for VIP guests.</li>
+                        </div>
+                        <button id="btn">Read More</button></div>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="sp2">
+
+    </div>
+    <!-- fest -->
+
+
+    <div class="cp1">
+        <section id="section3">
+        <h3 id="n4">Fest</h3></section>
+        <div class="cprice">
+
+            <div class="mcard shadow" id="m1">
+                <h4>Basic Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.25000/-</h5>
+
+                <div class="l1">
+                    <ul>
+                        <li>1 onsite property layout/design meeting, and up to 3 additional meetings</li>
+                        <li>Cloud-based Project HQ</li>
+                        <li>Supply any/all vendor recommendations </li>
+                        <li>Master timelines & Production schedules</li>
+                        <li>Complete rental ordering, management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mcard shadow" id="m2">
+                <h4>InBudget Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.40000/-</h5>
+                <div class="l2">
+                    <ul>
+                        <li>Helping clients find affordable yet suitable venues for their events.</li>
+                        <li>Creating a basic event theme and design to give the event a cohesive look.</li>
+                        <li>Negotiating with and managing vendors (caterers, decorators, etc.) to fit within the budget.
+                        </li>
+                        <li>Providing simple decor elements that align with the event theme.</li>
+                        <li>Handling RSVPs and attendee coordination.</li>
+                        <li>Organizing transportation and setup logistics.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="mcard shadow" id="m3">
+                <h4>Premium Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.90000/-</h5>
+                <div class="l3">
+                    <ul>
+                        <div class="box">
+                        <div class="visible-content">
+                        <li>Creating a unique and elaborate event theme and design tailored to the client's vision.</li>
+                        <li> Scouting and transforming venues to match the event's luxury theme.</li>
+                        <li> Incorporating lavish decor elements, premium floral arrangements, and intricate detailing.
+                        </li>
+                        <li> Managing and coordinating all vendors, including top-tier catering, entertainment, and
+                            more.
+                        </li>
+                    </div>
+                        <div class="invisible-content">
+                        <li> Offering personalized services to attendees, such as welcome gifts or concierge services.
+                        </li>
+                        <li>State-of-the-art sound, lighting, and multimedia setup for presentations and entertainment.
+                        </li>
+                        <li>Curating gourmet menus and fine dining experiences.</li>
+                        <li>Offering exclusive access and experiences for VIP guests.</li></div>
+                        <button id="btn">Read More</button>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="sp2">
+
+    </div>
+
+    <!-- Birthdays -->
+
+    <div class="cp1">
+        <section id="section4">
+        <h3 id="n3">Birthdays</h3></section>
+        <div class="cprice">
+
+            <div class="mcard shadow" id="m1">
+                <h4>Basic Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.10000/-</h5>
+
+                <div class="l1">
+                    <ul>
+                        <li>1 onsite property layout/design meeting, and up to 3 additional meetings</li>
+                        <li>Cloud-based Project HQ</li>
+                        <li>Supply any/all vendor recommendations </li>
+                        <li>Master timelines & Production schedules</li>
+                        <li>Complete rental ordering, management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mcard shadow" id="m2">
+                <h4>InBudget Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.25000/-</h5>
+                <div class="l2">
+                    <ul>
+                        <li>Helping clients find affordable yet suitable venues for their events.</li>
+                        <li>Creating a basic event theme and design to give the event a cohesive look.</li>
+                        <li>Negotiating with and managing vendors (caterers, decorators, etc.) to fit within the budget.
+                        </li>
+                        <li>Providing simple decor elements that align with the event theme.</li>
+                        <li>Handling RSVPs and attendee coordination.</li>
+                        <li>Organizing transportation and setup logistics.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="mcard shadow" id="m3">
+                <h4>Premium Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.50000/-</h5>
+                <div class="l3">
+                    <ul>
+                        <div class="box">
+                        <div class="visible-content">
+                        <li>Creating a unique and elaborate event theme and design tailored to the client's vision.</li>
+                        <li> Scouting and transforming venues to match the event's luxury theme.</li>
+                        <li> Incorporating lavish decor elements, premium floral arrangements, and intricate detailing.
+                        </li>
+                        <li> Managing and coordinating all vendors, including top-tier catering, entertainment, and
+                            more.
+                        </li>
+                    </div>
+                        <div class="invisible-content">
+                        <li> Offering personalized services to attendees, such as welcome gifts or concierge services.
+                        </li>
+                        <li>State-of-the-art sound, lighting, and multimedia setup for presentations and entertainment.
+                        </li>
+                        <li>Curating gourmet menus and fine dining experiences.</li>
+                        <li>Offering exclusive access and experiences for VIP guests.</li>
+                    </div>
+                    <button id="btn">Read More</button>
+                </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="sp2">
+
+    </div>
+    <!-- Liveshows -->
+
+    <div class="cp1">
+        <section id="section5">
+        <h3 id="n2">Live Shows</h3></section>
+        <div class="cprice">
+
+            <div class="mcard shadow" id="m1">
+                <h4>Basic Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.25000/-</h5>
+
+                <div class="l1">
+                    <ul>
+                        <li>1 onsite property layout/design meeting, and up to 3 additional meetings</li>
+                        <li>Cloud-based Project HQ</li>
+                        <li>Supply any/all vendor recommendations </li>
+                        <li>Master timelines & Production schedules</li>
+                        <li>Complete rental ordering, management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mcard shadow" id="m2">
+                <h4>InBudget Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.40000/-</h5>
+                <div class="l2">
+                    <ul>
+                        <li>Helping clients find affordable yet suitable venues for their events.</li>
+                        <li>Creating a basic event theme and design to give the event a cohesive look.</li>
+                        <li>Negotiating with and managing vendors (caterers, decorators, etc.) to fit within the budget.
+                        </li>
+                        <li>Providing simple decor elements that align with the event theme.</li>
+                        <li>Handling RSVPs and attendee coordination.</li>
+                        <li>Organizing transportation and setup logistics.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="mcard shadow" id="m3">
+                <h4>Premium Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.100000/-</h5>
+                <div class="l3">
+                    <ul>
+                        <div class="box">
+                        <div class="visible-content">
+                        <li>Creating a unique and elaborate event theme and design tailored to the client's vision.</li>
+                        <li> Scouting and transforming venues to match the event's luxury theme.</li>
+                        <li> Incorporating lavish decor elements, premium floral arrangements, and intricate detailing.
+                        </li>
+                        <li> Managing and coordinating all vendors, including top-tier catering, entertainment, and
+                            more.
+                        </li></div>
+                        <div class="invisible-content">
+                        <li> Offering personalized services to attendees, such as welcome gifts or concierge services.
+                        </li>
+                        <li>State-of-the-art sound, lighting, and multimedia setup for presentations and entertainment.
+                        </li>
+                        <li>Curating gourmet menus and fine dining experiences.</li>
+                        <li>Offering exclusive access and experiences for VIP guests.</li>
+                    </div>
+                    <button id="btn">Read More</button>
+                </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="sp2">
+
+    </div>
+
+    <!-- Festivals -->
+
+    <div class="cp1">
+        <section id="section6">
+        <h3 id="n1">Festivals</h3></section>
+        <div class="cprice">
+
+            <div class="mcard shadow" id="m1">
+                <h4>Basic Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.15000/-</h5>
+
+                <div class="l1">
+                    <ul>
+                        <li>1 onsite property layout/design meeting, and up to 3 additional meetings</li>
+                        <li>Cloud-based Project HQ</li>
+                        <li>Supply any/all vendor recommendations </li>
+                        <li>Master timelines & Production schedules</li>
+                        <li>Complete rental ordering, management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mcard shadow" id="m2">
+                <h4>InBudget Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.30000/-</h5>
+                <div class="l2">
+                    <ul>
+                        <li>Helping clients find affordable yet suitable venues for their events.</li>
+                        <li>Creating a basic event theme and design to give the event a cohesive look.</li>
+                        <li>Negotiating with and managing vendors (caterers, decorators, etc.) to fit within the budget.
+                        </li>
+                        <li>Providing simple decor elements that align with the event theme.</li>
+                        <li>Handling RSVPs and attendee coordination.</li>
+                        <li>Organizing transportation and setup logistics.</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="mcard shadow" id="m3">
+                <h4>Premium Packages</h4>
+                <div class="b"><button type="button" class="btn btn-outline-success">
+                    <a href="/details" class="book">Book</a></button></div>
+                <h5>Starting at Rs.50000/-</h5>
+                <div class="l3">
+                    <ul>
+                        <div class="box">
+                        <div class="visible-content">
+                        <li>Creating a unique and elaborate event theme and design tailored to the client's vision.</li>
+                        <li> Scouting and transforming venues to match the event's luxury theme.</li>
+                        <li> Incorporating lavish decor elements, premium floral arrangements, and intricate detailing.
+                        </li>
+                        <li> Managing and coordinating all vendors, including top-tier catering, entertainment, and
+                            more.
+                        </li></div>
+                        <div class="invisible-content">
+                        <li> Offering personalized services to attendees, such as welcome gifts or concierge services.
+                        </li>
+                        <li>State-of-the-art sound, lighting, and multimedia setup for presentations and entertainment.
+                        </li>
+                        <li>Curating gourmet menus and fine dining experiences.</li>
+                        <li>Offering exclusive access and experiences for VIP guests.</li></div>
+                        <button id="btn">Read More</button>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="sp2">
+
+    </div>
+
+
+    <!-- offer -->
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">SET-UP & EVENT, ALL IN 1 DAY</h2>
+                <p class="lead">WHEN YOUR EVENT LOAD IN/ SET UP AND THE EVENT ITSELF IS ALL IN THE SAME DAY.</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding-right: 26px;">
+                <div id="lt1">
+                <ul>
+                    <li>Full Event Management, 10hrs on event day</li>
+                    <li>Your own experienced lead planning team</li>
+                    <li>Supply any/all vendor recommendations</li>
+                    <li>Complete rental ordering, management</li>
+                    <li>Full Event Design & Custom 2-D Layouts</li>
+                    
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">SET-UP BEFORE EVENT DAY & EVENT ON DIFFERENT DAY</h2>
+                <p class="lead">WHEN YOUR EVENT LOAD IN/ SET UP IS BEFORE THE EVENT ITSELF, WITH EVENT BEING ON A
+                    SEPARATE DAY</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto" style="width: 52%; height: 328px; border-radius: 21px 21px 0 0;     padding-right: 27px;
+            padding-top: 13px; padding-top: 5px;">
+            <div id="lt2">
+                <ul> <li>Full Event Management, 4hrs set up (day before) and 10hr, on event day </li>
+                <li>Master timelines & Production schedule</li>
+                <li>Complete rental ordering & management</li>
+                <li>Full Event Design & Custom 2-D Layouts </li>
+                <li>Supply any/all vendor recommendations </li>
+               </ul></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="readmore.js"></script>
+        
+        <div class="spl">
+
+        </div>
+        <div class="copyright">
+            <p>ALL RIGHTS RESERVED &nbsp;|&nbsp; LET'S MAKE MAGIC TOGETHER |  &nbsp;|&nbsp; © 2023 PlankaRO
+            </p>
+        </div>
+        
+</body>
+
+</html>
